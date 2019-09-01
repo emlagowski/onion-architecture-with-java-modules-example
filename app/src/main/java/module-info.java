@@ -1,6 +1,7 @@
 module app {
     requires restapi;
     requires data;
+    requires domain;
 
     requires spring.core;
     requires spring.beans;
@@ -11,6 +12,8 @@ module app {
 
     requires spring.boot;
     requires spring.boot.autoconfigure;
+
+    requires reactor.core;
 
     requires com.fasterxml.classmate;
 

@@ -1,4 +1,6 @@
 module restapi {
+    requires domain;
+
     requires spring.web;
     requires reactor.core;
 

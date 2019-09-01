@@ -16,7 +16,8 @@
 		<module>rest-api</module>
 		<module>app</module>
 		<module>data</module>
-	</modules>
+        <module>domain</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
