@@ -8,5 +8,5 @@ module data {
     requires reactor.core;
     requires spring.context;
 
-    opens io.github.emlagowski.springbootwithmodules.data;
+    opens io.github.emlagowski.personion.data;
 }

@@ -1,4 +1,4 @@
-package io.github.emlagowski.springbootwithmodules.domain;
+package io.github.emlagowski.personion.domain;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

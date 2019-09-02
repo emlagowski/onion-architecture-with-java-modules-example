@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<name>spring-boot-with-modules</name>
-	<description>Demo project for Spring Boot with Java modules</description>
+	<name>personion</name>
+	<description>Example of Spring Boot application in onion architecture written with modules introduced in Java 9.</description>
 
 	<groupId>io.github.emlagowski</groupId>
-	<artifactId>spring-boot-with-modules</artifactId>
+	<artifactId>personion</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
@@ -37,7 +37,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <jvmArguments>--add-modules java.xml.bind</jvmArguments>
-                    <mainClass>io.github.emlagowski.springbootwithmodules.app.SpringBootWithModulesApplication</mainClass>
+                    <mainClass>PersonionApplication</mainClass>
                 </configuration>
 			</plugin>
 			<plugin>

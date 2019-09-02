@@ -1,8 +1,8 @@
-package io.github.emlagowski.springbootwithmodules.api.rest;
+package io.github.emlagowski.personion.api.rest;
 
-import io.github.emlagowski.springbootwithmodules.domain.CreatePersonCommand;
-import io.github.emlagowski.springbootwithmodules.domain.Person;
-import io.github.emlagowski.springbootwithmodules.domain.PersonService;
+import io.github.emlagowski.personion.domain.CreatePersonCommand;
+import io.github.emlagowski.personion.domain.Person;
+import io.github.emlagowski.personion.domain.PersonService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

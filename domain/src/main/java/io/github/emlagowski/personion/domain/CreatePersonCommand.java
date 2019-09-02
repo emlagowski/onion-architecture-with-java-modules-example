@@ -1,22 +1,14 @@
-package io.github.emlagowski.springbootwithmodules.domain;
+package io.github.emlagowski.personion.domain;
 
-import java.util.UUID;
-
-public class Person {
-    private final UUID id;
+public class CreatePersonCommand {
     private final String firstName;
     private final String lastName;
     private final int age;
 
-    public Person(UUID id, String firstName, String lastName, int age) {
-        this.id = id;
+    public CreatePersonCommand(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-    }
-
-    public UUID getId() {
-        return id;
     }
 
     public String getFirstName() {

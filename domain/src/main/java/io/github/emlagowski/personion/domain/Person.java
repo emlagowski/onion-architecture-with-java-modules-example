@@ -1,14 +1,22 @@
-package io.github.emlagowski.springbootwithmodules.api.rest;
+package io.github.emlagowski.personion.domain;
 
-public class CreatePersonRequest {
+import java.util.UUID;
+
+public class Person {
+    private final UUID id;
     private final String firstName;
     private final String lastName;
     private final int age;
 
-    public CreatePersonRequest(String firstName, String lastName, int age) {
+    public Person(UUID id, String firstName, String lastName, int age) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -22,5 +30,4 @@ public class CreatePersonRequest {
     public int getAge() {
         return age;
     }
-
 }

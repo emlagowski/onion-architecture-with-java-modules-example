@@ -1,11 +1,11 @@
-package io.github.emlagowski.springbootwithmodules.domain;
+package io.github.emlagowski.personion.api.rest;
 
-public class CreatePersonCommand {
+public class CreatePersonRequest {
     private final String firstName;
     private final String lastName;
     private final int age;
 
-    public CreatePersonCommand(String firstName, String lastName, int age) {
+    public CreatePersonRequest(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -22,4 +22,5 @@ public class CreatePersonCommand {
     public int getAge() {
         return age;
     }
+
 }

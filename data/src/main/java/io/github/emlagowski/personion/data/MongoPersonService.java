@@ -1,9 +1,9 @@
-package io.github.emlagowski.springbootwithmodules.data;
+package io.github.emlagowski.personion.data;
 
-import io.github.emlagowski.springbootwithmodules.domain.CreatePersonCommand;
-import io.github.emlagowski.springbootwithmodules.domain.Person;
-import io.github.emlagowski.springbootwithmodules.domain.PersonId;
-import io.github.emlagowski.springbootwithmodules.domain.PersonService;
+import io.github.emlagowski.personion.domain.CreatePersonCommand;
+import io.github.emlagowski.personion.domain.Person;
+import io.github.emlagowski.personion.domain.PersonId;
+import io.github.emlagowski.personion.domain.PersonService;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

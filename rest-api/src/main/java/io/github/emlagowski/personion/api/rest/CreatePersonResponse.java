@@ -1,4 +1,4 @@
-package io.github.emlagowski.springbootwithmodules.api.rest;
+package io.github.emlagowski.personion.api.rest;
 
 import java.util.UUID;
 

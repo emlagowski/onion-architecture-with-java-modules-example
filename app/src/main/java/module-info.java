@@ -17,5 +17,5 @@ module app {
 
     requires com.fasterxml.classmate;
 
-    opens io.github.emlagowski.springbootwithmodules.app;
+    opens io.github.emlagowski.personion.app;
 }
