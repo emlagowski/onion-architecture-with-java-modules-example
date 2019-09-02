@@ -1,12 +1,14 @@
 package io.github.emlagowski.personion.api.people;
 
-import io.github.emlagowski.personion.domain.people.CreatePersonCommand;
+import io.github.emlagowski.personion.domain.people.ChangePersonNameCommand;
 import io.github.emlagowski.personion.domain.people.Person;
 import io.github.emlagowski.personion.domain.people.PersonFacade;
 import io.github.emlagowski.personion.domain.people.PersonReader;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,5 +46,10 @@ public class PersonController {
         return personFacade
                 .createPerson(createPersonMapper.fromRequest(createPersonRequest))
                 .map(createPersonMapper::toResponse);
+    }
+
+    @PatchMapping("/{id}/name")
+    public Mono<Person> changeName(@PathVariable("id") UUID id, @RequestBody ChangePersonName changePersonName) {
+        return personFacade.changePersonName(new ChangePersonNameCommand(id, changePersonName.name));
     }
 }

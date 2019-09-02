@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>io.github.emlagowski</groupId>
-            <artifactId>rest-api</artifactId>
+            <artifactId>api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

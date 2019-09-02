@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class Person {
     private final UUID id;
-    private final String firstName;
+    private String firstName;
     private final String lastName;
     private final int age;
 
@@ -31,7 +31,12 @@ public class Person {
         return age;
     }
 
-    public PersonId getPersonId() {
+    PersonId getPersonId() {
         return new PersonId(id);
+    }
+
+    Person changeName(String newName) {
+        this.firstName = newName;
+        return this;
     }
 }
