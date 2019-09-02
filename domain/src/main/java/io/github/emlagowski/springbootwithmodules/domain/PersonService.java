@@ -8,4 +8,5 @@ import java.util.UUID;
 public interface PersonService {
     Flux<Person> findAll();
     Mono<Person> findById(UUID uuid);
+    Mono<PersonId> save(CreatePersonCommand createPersonCommand);
 }
