@@ -1,4 +1,4 @@
-package io.github.emlagowski.personion.data;
+package io.github.emlagowski.personion.data.people;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 

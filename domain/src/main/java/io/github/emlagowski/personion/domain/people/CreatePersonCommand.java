@@ -1,11 +1,11 @@
-package io.github.emlagowski.personion.api.rest;
+package io.github.emlagowski.personion.domain.people;
 
-public class CreatePersonRequest {
+public class CreatePersonCommand {
     private final String firstName;
     private final String lastName;
     private final int age;
 
-    public CreatePersonRequest(String firstName, String lastName, int age) {
+    public CreatePersonCommand(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -22,5 +22,4 @@ public class CreatePersonRequest {
     public int getAge() {
         return age;
     }
-
 }

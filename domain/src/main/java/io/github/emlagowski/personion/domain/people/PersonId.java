@@ -1,4 +1,4 @@
-package io.github.emlagowski.personion.domain;
+package io.github.emlagowski.personion.domain.people;
 
 import java.util.UUID;
 

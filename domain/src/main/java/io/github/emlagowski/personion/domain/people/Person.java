@@ -1,4 +1,4 @@
-package io.github.emlagowski.personion.domain;
+package io.github.emlagowski.personion.domain.people;
 
 import java.util.UUID;
 
@@ -29,5 +29,9 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public PersonId getPersonId() {
+        return new PersonId(id);
     }
 }

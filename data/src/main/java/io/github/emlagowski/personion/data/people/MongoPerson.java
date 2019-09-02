@@ -1,8 +1,8 @@
-package io.github.emlagowski.personion.data;
+package io.github.emlagowski.personion.data.people;
 
 import java.util.UUID;
 
-public class MongoPerson {
+class MongoPerson {
     UUID id;
     String firstName;
     String lastName;

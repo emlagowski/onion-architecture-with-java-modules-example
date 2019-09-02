@@ -1,5 +1,5 @@
 module app {
-    requires restapi;
+    requires api;
     requires data;
     requires domain;
 
@@ -18,4 +18,5 @@ module app {
     requires com.fasterxml.classmate;
 
     opens io.github.emlagowski.personion.app;
+    opens io.github.emlagowski.personion.app.person;
 }

@@ -1,4 +1,4 @@
-package io.github.emlagowski.personion.api.rest;
+package io.github.emlagowski.personion.api.people;
 
 import java.util.UUID;
 
